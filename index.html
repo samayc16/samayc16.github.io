@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Samay Chandna</title>
@@ -38,12 +33,22 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, my name is Samay</h1>
+								<h1 class="text-slider-items">
+									Hi, my name is Samay$ 
+									Welcome to my website :)$ 
+									Hi, my name is Samay
+								</h1>
 							</header>
+							<header class="major">
+								<h1 class="text-slider"></h1>
+							</header>
+							
 							<div class="content">
-								<p>Computer Engineering @ Georgia Tech<br />
-								Concentrations in Signal Processing and <br />
-								Harware & Emerging Architectures</p>
+								<p>
+									Computer Engineering @ Georgia Tech<br />
+									Concentrations in Signal Processing and <br />
+									Harware & Emerging Architectures
+								</p>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">Get Started</a></li>
 								</ul>
@@ -128,57 +133,32 @@
 					</div>
 
 				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="mailto:schandna3@gatech.edu">schandna3@gatech.edu</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<a href="tel:404-800-6868">(404) 800-6868</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1052 Center St NW<br />
-										Atlanta, GA 30318<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
+				<div class="container space-around">
+					<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-envelope"></span>
+								<h3>Email</h3>
+								<a href="mailto:schandna3@gatech.edu">schandna3@gatech.edu</a>
+							</div>
 					</section>
+					<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-phone"></span>
+								<h3>Phone</h3>
+								<a href="tel:404-800-6868">(404) 800-6868</a>
+							</div>
+					</section>
+					<section>
+							<div class="contact-method">
+								<span class="icon solid alt fa-home"></span>
+								<h3>Address</h3>
+								<span>1052 Center St NW<br />
+								Atlanta, GA 30318<br />
+								United States of America</span>
+							</div>
+					</section>
+				</div>
+								
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -200,6 +180,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/typed.js"></script>
+			<script src="assets/js/typed.min.js"></script>
+		    <script>
+				if ($(".text-slider").length == 1) {
 
+					var typed_strings = 
+						$(".text-slider-items").text();
+
+					var typed = new Typed(".text-slider", {
+						strings: typed_strings.split("$ "),
+						typeSpeed: 40,
+						loop: false,
+						backDelay: 900,
+						backSpeed: 30,
+						showCursor: false,
+						autoInsertCss: true,
+						startDelay: 750,
+					});
+				}
+			</script>
 	</body>
 </html>
