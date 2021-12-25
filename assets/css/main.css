@@ -283,6 +283,10 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+	.text-slider-items {
+        display: none;
+    }
+
 	.align-left {
 		text-align: left;
 	}
