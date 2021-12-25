@@ -6,7 +6,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+m
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -283,6 +283,7 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+	
 	.text-slider-items {
         display: none;
     }
@@ -2436,6 +2437,17 @@ input, select, textarea {
 
 /* Table */
 
+	.container {
+	  display: flex;
+	}
+	.container.space-around {
+	  padding-top: 3em;
+	  justify-content: space-around;
+	}
+	.container.space-between {  
+	  justify-content: space-between;
+	}	
+
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -2920,7 +2932,7 @@ input, select, textarea {
 		}
 
 		.contact-method h3 {
-			margin: 0 0 0.5em 0;
+			margin: 0.5em 0.5em 0.5em 0;
 		}
 
 /* Spotlights */
