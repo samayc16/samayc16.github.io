@@ -3248,6 +3248,7 @@ input, select, textarea {
 						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
 							right: 2em;
 						}
+				
 
 		#header.reveal {
 			-moz-animation: reveal-header 0.35s ease;
@@ -3360,6 +3361,7 @@ input, select, textarea {
 							#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
 								right: 1.5em;
 							}
+					
 
 		}
 
